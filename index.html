@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Celebrity Dataing Fun Times</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tell us about yourself:</h1>
+
+      <p>To suggest a date, we need to know a little about you:</p>
+
+      <form id="user">
+        <label for="age">Age</label>
+        <input id="age" type="text">
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+        <label for="weight">Weight (in Lbs.)</label>
+        <input id="weight" type="text">
+        <label for="hairColor">Hair Color</label>
+        <input id="hairColor" type="text">
+
+
+        <button type="submit" class="btn btn-primary">Who's my dream date?</button>
+      </form>
+
+      <div id="yourDate">
+        <p>Your dream date is <span id="date"></span> please send $1000 to Dating Service, Inc.</p>
+      </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
