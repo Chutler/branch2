@@ -3,15 +3,20 @@ $(document).ready(function() {
     var age = parseInt($("input#age").val());
     var gender = $("select#gender").val();
     var weight = parseInt($("input#weight").val());
-    var hairColor = $("input#hairColor")
+    var hair = $("input#hairColor").val();
 
-    var quote = (100 - age) * 3;
-    if (gender === 'male' && age < 26) {
-      quote += 50;
+    $(".age").text(age);
+    $(".gender").text(gender);
+    $(".weight").text(weight);
+    $(".hair").text(hair);
+
+    if (age < 18) {
+      $('#underAge').show();
+    } else if (age >= 18 && age <= 40) {
+      $('#adult').show();
+    } else {
+      $('#senior').show();
     }
-
-    $("#date").text(quote);
-    $("#yourDate").show()
 
     event.preventDefault();
   });
